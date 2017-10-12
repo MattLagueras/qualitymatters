@@ -25,6 +25,11 @@ public class ItemsPresenter extends Presenter<ItemsView> {
     @NonNull
     private final AnalyticsModel analyticsModel;
 
+    @Override
+    public void bindView(@NonNull ItemsView view) {
+        super.bindView(view);
+    }
+
     public ItemsPresenter(@NonNull ItemsPresenterConfiguration presenterConfiguration,
                           @NonNull ItemsModel itemsModel,
                           @NonNull AsyncJobsObserver asyncJobsObserver,
